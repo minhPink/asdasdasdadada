@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        .menu-main{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-main>li>a{
+            display: inline-flex;
+            font-size: 20px;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 80px;
+            background: black;
+            color: white;
+            width: 300px;
+        }
+        .menu-main>li:hover>a{
+            background: pink;
+        }
+        .menu-main>li{
+            position: relative;
+            width: 300px;
+        }
+        .menu-main ul{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            left: 100%;
+            top: 0;
+            list-style: none;
+            display: none;
+        }
+        .menu-main ul a{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            padding: 20px 40px;
+            background: red;
+        }
+        .menu-main ul a:hover{
+            background: blue;
+        }
+        .menu-main>li:hover ul{
+            display: block;
+        }
+    </style>
+    <div class="inner-wrap">
+        <ul class="menu-main">
+            <li><a href="#">Muc 1</a></li>
+            <li><a href="#">Muc 2</a></li>
+            <li><a href="#">Muc 3</a>
+                <ul>
+                    <li><a href="#">Muc 1</a></li>
+                    <li><a href="#">Muc 2</a></li>
+                    <li><a href="#">Muc 3</a></li>
+                    <li><a href="#">Muc 4</a></li>
+                    <li><a href="#">Muc 5</a></li>
+                    <li><a href="#">Muc 6</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Muc 4</a></li>
+            <li><a href="#">Muc 5</a></li>
+            <li><a href="#">Muc 6</a></li>
+            <li><a href="#">Muc 7</a></li>
+        </ul>
+    </div>
+</body>
+</html>
